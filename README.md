@@ -145,3 +145,13 @@ Dependências dos pacotes que devem ficar em package.json:
 ## Créditos
 
 Todas as imagens usadas na aplicação são pertencentes a freepik.com
+
+## Rodar backend em background sempre ativo
+
+Há uma outra maneira de iniciar sem precisar do tsc -w que não explorei nos vídeos. É usando o ts-node.
+
+Instale: npm i -g ts-node
+
+Execute assim: nodemon --watch backend --exec "ts-node" backend/server.ts 
+
+Dessa forma, você não vai precisar mais do tsc -w em outro terminal.
